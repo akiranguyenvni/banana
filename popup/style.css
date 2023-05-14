@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: rebeccapurple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.active {
+  display: flex;
+}
+
+.popup {
+  background-color: white;
+  /* width: fit-content; */
+  width: 500px;
+  padding: 2rem;
+  
+  position: relative; /* to enable absolute position for 'popup button'*/
+}
+
+.popup button {
+  background-color: white;
+  color: rebeccapurple;
+  font-size: 2rem;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

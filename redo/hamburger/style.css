@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: "Popper", sans-serif;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+button {
+  background-color: rebeccapurple;
+  color: white;
+  border: none;
+  padding: 1rem;
+
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+button.active {
+  transform: translateX(-100px);
+  transition: 0.3s ease-in-out;
+}
+
+nav {
+  background-color: rebeccapurple;
+  padding: 2rem;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: 0.3s ease-in-out;
+}
+
+nav.active {
+  transform: translateX(0);
+  transition: 0.3s ease-in-out;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 1rem 0;
+}
+
+nav a {
+  color: white;
+}
